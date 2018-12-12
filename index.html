@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parallax Slider</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900|Playfair+Display:400,400i,700,700i,900,900i|Prata|Ubuntu&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="data/css/style.css">
+</head>
+<body>
+<div class="home-page-slider-holder">
+    <div class="col-lg-10 ml-auto mr-auto">
+        <div class="home-slider">
+            <div class="home-controls-holder">
+                <div class="home-controls-content">
+                    <a class="prev_control" href="javascript:;" role="button" data-slide="prev">
+                        <img src="data/images/left-arrow.png" alt="">
+                    </a>
+                    <img src="<?php echo $data_server; ?>images/Line135.png" alt="">
+                    <a class="next_control" href="javascript:;" role="button" data-slide="next">
+                        <img src="data/images/right-arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="slider-progress-bar">
+                <div id="inner-bar"></div>
+            </div>
+
+            <div class="row home-slider-inner" id="homeSlider">
+                <div class="home-slider-card active" id="home-card">
+                    <div class="light-orange-background-box"></div>
+                    <div class="background-white-transition-box"></div>
+                    <div class="col-lg-6">
+                        <div class="home-slider-front-message">
+                            <h2>
+                                <span>First  Demo Product</span>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ...
+                            </h2>
+                            <div class="learn-more">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="home-image-holder">
+                            <img src="data/images/Jewellery-PNG.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="home-slider-card">
+                    <div class="light-orange-background-box"></div>
+                    <div class="background-white-transition-box"></div>
+                    <div class="col-lg-6">
+                        <div class="home-slider-front-message">
+                            <h2>
+                                <span>Second Demo Product</span>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ...
+                            </h2>
+
+                            <div class="learn-more">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="home-image-holder">
+                            <img src="data/images/kissclipart-jewels-png-clipart-earring-diamond-necklace-45422794fb53afa0.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="home-slider-card">
+                    <div class="light-orange-background-box"></div>
+                    <div class="background-white-transition-box"></div>
+                    <div class="col-lg-6">
+                        <div class="home-slider-front-message">
+                            <h2>
+                                <span>Third Demo Product</span>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ...
+                            </h2>
+                            <div class="learn-more">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="home-image-holder">
+                            <img src="data/images/kissclipart-earring-clipart-earring-silver-463ca5651a76cb5a.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="home-slider-card">
+                    <div class="light-orange-background-box"></div>
+                    <div class="background-white-transition-box"></div>
+                    <div class="col-lg-6">
+                        <div class="home-slider-front-message">
+                            <h2>
+                                <span>Fourth Demo Product</span>
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ...
+                            </h2>
+                            <div class="learn-more">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="home-image-holder">
+                            <img src="data/images/5a37b6cabdf364.815581051513600714778.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-slider-indicators-holder hide-on-mobile">
+                <ul class="home-slider-indicators-list">
+                    <li class="home-slider-indicators-list-item active" data-target="#homeSlider" data-slide-to="1">
+                        <a href="javascript:;">0<span>1</span></a>
+                    </li>
+                    <li  class="home-slider-indicators-list-item" data-target="#homeSlider" data-slide-to="2">
+                        <a href="javascript:;">0<span>2</span></a>
+                    </li>
+                    <li class="home-slider-indicators-list-item" data-target="#homeSlider" data-slide-to="3">
+                        <a href="javascript:;">0<span>3</span></a>
+                    </li>
+                    <li class="home-slider-indicators-list-item" data-target="#homeSlider" data-slide-to="4">
+                        <a href="javascript:;">0<span>4</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="data/js/customParallaxSlider.js"></script>
+</body>
+</html>
